@@ -1,7 +1,7 @@
 #include "HelloWorldScene.h"
 
 USING_NS_CC;
-
+/*
 CCScene* HelloWorld::scene()
 {
     // 'scene' is an autorelease object
@@ -16,7 +16,7 @@ CCScene* HelloWorld::scene()
     // return the scene
     return scene;
 }
-
+*/
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
