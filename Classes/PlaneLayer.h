@@ -1,6 +1,6 @@
 #ifndef __PLANELAYER_H__
 #define __PLANELAYER_H__
-
+#include "BulletLayer.h"
 #include "cocos2d.h"
 USING_NS_CC;
 
@@ -17,7 +17,7 @@ public:
 	static PlaneLayer* g_pPlaneLayer;
 private:
 	PlaneLayer();
-	
+	BulletLayer *m_BulletLayer;
 };
 
 #endif

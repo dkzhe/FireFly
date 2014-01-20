@@ -4,6 +4,8 @@
 GameScene::GameScene(void)
 {
 	m_hellowordLay=NULL;
+	m_PlaneLayer=NULL;
+//	m_BulletLayer=NULL;
 }
 
 
@@ -26,6 +28,11 @@ bool GameScene::init()
 		m_PlaneLayer=PlaneLayer::create();
 		CC_BREAK_IF(!m_PlaneLayer);
 		this->addChild(m_PlaneLayer);
+/*
+		m_BulletLayer=BulletLayer::create();
+		CC_BREAK_IF(!m_BulletLayer);
+		this->addChild(m_BulletLayer);*/
+		//m_BulletLayer->StartShoot(); //БФдкетЖЮ
 		bRet=true;
 
 	} while (0);

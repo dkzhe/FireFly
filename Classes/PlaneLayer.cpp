@@ -3,7 +3,7 @@
 PlaneLayer* PlaneLayer::g_pPlaneLayer=NULL;
 PlaneLayer::PlaneLayer()
 {
-
+	m_BulletLayer=NULL;
 }
 
 PlaneLayer::~PlaneLayer()
@@ -48,6 +48,10 @@ bool PlaneLayer::init()
 		plane->runAction(blink);
 		plane->runAction(CCRepeatForever::create(animate));
 
+		m_BulletLayer=BulletLayer::create();
+		CC_BREAK_IF(!m_BulletLayer);
+		this->addChild(m_BulletLayer);
+		this->m_BulletLayer->StartShoot();
 		bRet=true;
 
 	} while (0);
