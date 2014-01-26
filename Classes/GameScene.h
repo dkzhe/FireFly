@@ -16,6 +16,10 @@ public:
 
 	HelloWorld *m_hellowordLay;
 	PlaneLayer *m_PlaneLayer;
+<<<<<<< HEAD
 //	BulletLayer *m_BulletLayer;
+=======
+	BulletLayer *m_BulletLayer;
+>>>>>>> 0fd1d4af53462490df9af9a21c0ed1bb00c3a786
 };
 
