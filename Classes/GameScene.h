@@ -3,6 +3,7 @@
 #include "HelloWorldScene.h"
 #include "PlaneLayer.h"
 #include "BulletLayer.h"
+#include "ContralLayer.h"
 USING_NS_CC;
 class GameScene :
 	public CCScene
@@ -17,5 +18,6 @@ public:
 	HelloWorld *m_hellowordLay;
 	PlaneLayer *m_PlaneLayer;
 	BulletLayer *m_BulletLayer;
+	ContralLayer *m_ContralLayer;
 };
 

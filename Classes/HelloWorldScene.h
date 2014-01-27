@@ -19,10 +19,6 @@ public:
 	void backgroundMove(float dt);
     // implement the "static node()" method manually
     CREATE_FUNC(HelloWorld);
-private:
-	CCSprite* background1;
-	CCSprite* background2;
-	CCSprite* background3;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

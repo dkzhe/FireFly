@@ -1,6 +1,6 @@
 #ifndef __PLANELAYER_H__
 #define __PLANELAYER_H__
-#include "BulletLayer.h"
+
 #include "cocos2d.h"
 USING_NS_CC;
 
@@ -15,9 +15,10 @@ public:
 	virtual bool init();
 	static PlaneLayer* create();
 	static PlaneLayer* g_pPlaneLayer;
+	void MoveTo(CCPoint point);
+	bool isActive;
 private:
 	PlaneLayer();
-	BulletLayer *m_BulletLayer;
 };
 
 #endif

@@ -34,8 +34,12 @@ bool GameScene::init()
 		CC_BREAK_IF(!m_BulletLayer);
 		this->addChild(m_BulletLayer);
 		//m_BulletLayer->StartShoot(); //±ÄÔÚÕâ¶Î
-		bRet=true;
 
+		m_ContralLayer=ContralLayer::create();
+		CC_BREAK_IF(!m_ContralLayer);
+		this->addChild(m_ContralLayer);
+
+		bRet=true;
 	} while (0);
 	return bRet;
 }
